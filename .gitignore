@@ -1,0 +1,11 @@
+site/
+instagram-assets/
+материалы-instagram/
+*.AVI
+*.MOV
+*.MP4
+*.HEIC
+*.zip
+*.lnk
+*.docx
+.DS_Store

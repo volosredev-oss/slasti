@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Сласти</title>
+    <meta name="description" content="Кондитерская в Москве" />
+    <link rel="icon" href="../img/logo-cupcake.png" type="image/png" />
+    <link rel="stylesheet" href="../css/style.css?v=48" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="logo" href="#top">
+          <img src="../img/logo-cupcake.png" alt="Сласти" />
+        </a>
+        <nav class="nav-row" aria-label="Разделы">
+          <a href="#about" data-section="about">О сластях</a>
+          <a href="#menu" data-section="menu">Меню</a>
+          <a href="#events" data-section="events">Мероприятия</a>
+          <a href="#reviews" data-section="reviews">Отзывы</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="top" class="hero">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <h1 class="hero-title" aria-label="Сласти">
+          <span class="wave"><span class="wave-ref" aria-hidden="true">Сласти</span><span class="wave-letter" style="--i: 0">С</span><span class="wave-letter" style="--i: 1">л</span><span class="wave-letter" style="--i: 2">а</span><span class="wave-letter" style="--i: 3">с</span><span class="wave-letter" style="--i: 4">т</span><span class="wave-letter" style="--i: 5">и</span></span>
+        </h1>
+        <div class="drum-wrap">
+          <div
+            class="stage"
+            id="cake-stage"
+            role="region"
+            aria-label="Торты"
+            tabindex="0"
+          >
+            <div class="stage-center">
+              <div class="cake-ring" id="cake-ring">
+                <figure>
+                  <img src="../img/5510.jpg" alt="Зелёный торт с мечом" draggable="false" />
+                </figure>
+                <figure>
+                  <img src="../img/7763.jpg" alt="Белый торт с вишнями и чёрными бантами" draggable="false" />
+                </figure>
+                <figure>
+                  <img src="../img/5276.jpg" alt="Белый торт с розовыми бантами" draggable="false" />
+                </figure>
+              </div>
+            </div>
+            <div class="drum-shadow" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="block">
+        <div class="wrap">
+          <h2>О сластях</h2>
+          <div class="about" id="about-copy">
+            <span class="about-spacer" id="about-spacer"></span>
+            <span class="about-typed" id="about-typed"></span>
+            <img class="about-cake" id="about-cake" src="../img/ТОРТ2.png" alt="" />
+          </div>
+          <div class="formats" id="formats">
+            <img class="formats-bento" src="../img/bento.png" alt="Розовый бенто с лентой и сердечками" />
+            <div class="formats-bento-copy">
+              <p>Бенто — маленький тортик на одного. Иногда на двоих, если хочется разделить.</p>
+              <p><span class="formats-num">600 граммов.</span> Свой цвет, своя надпись, лента и сердечки — всё под неё.</p>
+              <p>Его ставят прямо перед ней. И сразу понятно: это собрали только для тебя.</p>
+            </div>
+            <div class="formats-cups-copy">
+              <p>Cakes to go — тортик в стаканчике. Порция маленькая и вся ваша.</p>
+              <p><span class="formats-num">200 граммов.</span> Берём от двух: себе и подруге, или каждой гостье свой.</p>
+              <p>Их легко унести с собой. Сверху рисуем что-нибудь милое, и даже обычный день становится сладким.</p>
+            </div>
+            <img class="formats-cups" src="../img/cakes-to-go.png" alt="Два тортика в стаканчиках" />
+          </div>
+          <div class="history" id="history">
+            <p class="history-label">История</p>
+            <div class="history-frame">
+              <div class="history-copy">
+                <p class="history-year" id="history-year">2022</p>
+                <p class="history-phrase" id="history-phrase"></p>
+              </div>
+              <div class="history-photo">
+                <img id="history-photo" alt="" />
+              </div>
+            </div>
+            <div class="history-line">
+              <div class="history-track" role="tablist" aria-label="Годы" id="history-hearts">
+                <div class="history-rail" aria-hidden="true"></div>
+                <div class="history-progress" id="history-progress" aria-hidden="true"></div>
+              </div>
+              <div class="history-labels" id="history-labels"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="block blush">
+        <svg class="slice-defs" width="0" height="0" aria-hidden="true">
+          <defs>
+            <clipPath id="slice-frame" clipPathUnits="userSpaceOnUse">
+              <path
+                id="slice-shape"
+                d="M 195.8 115.7 C 193.4 120.9 191.4 125.4 189.3 130.0 C 187.2 134.5 185.1 138.6 183.2 142.9 C 181.3 147.2 179.7 151.3 177.9 155.7 C 176.0 160.0 174.1 164.3 172.1 168.9 C 170.0 173.6 167.9 178.1 165.5 183.5 C 163.2 188.8 161.0 194.8 157.9 201.0 C 154.8 207.2 151.7 215.5 146.9 220.6 C 142.1 225.8 135.6 229.9 129.2 232.0 C 122.9 234.1 115.4 234.3 108.7 233.3 C 102.1 232.3 95.5 228.5 89.3 226.0 C 83.1 223.5 77.4 220.6 71.5 218.0 C 65.6 215.4 59.9 213.1 54.0 210.5 C 48.1 207.8 42.3 205.2 36.3 202.1 C 30.2 199.1 22.7 196.7 17.6 192.2 C 12.4 187.8 7.7 181.8 5.3 175.4 C 2.9 169.1 2.5 161.1 3.4 154.1 C 4.3 147.0 8.1 139.4 10.6 133.0 C 13.1 126.7 16.2 121.1 18.6 115.7 C 21.1 110.4 23.0 105.7 25.2 101.0 C 27.3 96.3 29.4 92.0 31.4 87.6 C 33.4 83.2 35.2 78.9 37.2 74.4 C 39.1 69.9 40.9 65.5 43.0 60.6 C 45.1 55.8 47.1 50.7 49.8 45.6 C 52.5 40.5 55.4 34.8 59.2 30.0 C 63.1 25.3 67.7 20.6 72.7 16.9 C 77.8 13.2 83.7 9.9 89.7 7.7 C 95.7 5.4 102.2 4.1 108.7 3.5 C 115.2 2.8 122.0 2.8 128.5 3.7 C 134.9 4.7 141.3 7.1 147.4 9.4 C 153.6 11.7 159.3 14.7 165.5 17.4 C 171.6 20.2 178.0 22.5 184.2 25.8 C 190.3 29.1 197.7 32.1 202.5 37.1 C 207.2 42.0 211.2 48.8 212.8 55.7 C 214.4 62.5 213.7 70.9 212.1 78.1 C 210.6 85.3 206.0 92.8 203.3 99.1 C 200.6 105.3 198.1 110.6 195.8 115.7 Z"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+        <h2>ТОРТЫ</h2>
+        <p class="menu-note">
+          *сложный декор, печать на сахарной/вафельной бумаге, ягоды, мастика, цветы оплачиваются отдельно
+        </p>
+        <div class="menu-order" id="menu-order">
+          <div class="menu-step">
+            <div class="menu-step-name">
+              <svg class="menu-heart" data-heart="ready" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19.6c-.5 0-7.4-4.4-7.4-9.3C4.6 7.4 6.6 5.5 9.1 5.5c1.4 0 2.5.7 3 1.7.5-1 1.6-1.7 3-1.7 2.5 0 4.5 1.9 4.5 4.8 0 4.9-6.9 9.3-7.6 9.3z"/></svg>
+              <p>готовые</p>
+            </div>
+            <p class="menu-ready-note">при нажатии на готовую начинку она подставляется в демо-расчёт</p>
+          </div>
+          <div class="menu-rail">
+          <ul class="menu-grid">
+          <li>
+            <button type="button" data-choice="ready">
+            <figure>
+              <svg class="slice" viewBox="0 0 216.83 236.87" role="img" aria-label="Баунти">
+                <image href="../img/photo_1_2026-10-25_12-56-25.jpg" x="0" y="0" width="216.83" height="236.87" preserveAspectRatio="xMidYMid slice" clip-path="url(#slice-frame)" />
+                <use href="#slice-shape" fill="none" stroke="#ffffff" stroke-width="3" />
+              </svg>
+              <figcaption>Баунти</figcaption>
+            </figure>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-choice="ready">
+            <figure>
+              <svg class="slice" viewBox="0 0 216.83 236.87" role="img" aria-label="Молочный ломтик">
+                <image href="../img/photo_2_2026-10-25_12-56-25.jpg" x="0" y="0" width="216.83" height="236.87" preserveAspectRatio="xMidYMid slice" clip-path="url(#slice-frame)" />
+                <use href="#slice-shape" fill="none" stroke="#ffffff" stroke-width="3" />
+              </svg>
+              <figcaption>Молочный ломтик</figcaption>
+            </figure>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-choice="ready">
+            <figure>
+              <svg class="slice" viewBox="0 0 216.83 236.87" role="img" aria-label="Черника-ваниль">
+                <image href="../img/photo_3_2026-10-25_12-56-25.jpg" x="0" y="0" width="216.83" height="236.87" preserveAspectRatio="xMidYMid slice" clip-path="url(#slice-frame)" />
+                <use href="#slice-shape" fill="none" stroke="#ffffff" stroke-width="3" />
+              </svg>
+              <figcaption>Черника-ваниль</figcaption>
+            </figure>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-choice="ready">
+            <figure>
+              <svg class="slice" viewBox="0 0 216.83 236.87" role="img" aria-label="Вишня-шоколад">
+                <image href="../img/photo_4_2026-10-25_12-56-25.jpg" x="0" y="0" width="216.83" height="236.87" preserveAspectRatio="xMidYMid slice" clip-path="url(#slice-frame)" />
+                <use href="#slice-shape" fill="none" stroke="#ffffff" stroke-width="3" />
+              </svg>
+              <figcaption>Вишня-шоколад</figcaption>
+            </figure>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-choice="ready">
+            <figure>
+              <svg class="slice" viewBox="0 0 216.83 236.87" role="img" aria-label="Красный бархат с малиной">
+                <image href="../img/photo_5_2026-10-25_12-56-25.jpg" x="0" y="0" width="216.83" height="236.87" preserveAspectRatio="xMidYMid slice" clip-path="url(#slice-frame)" />
+                <use href="#slice-shape" fill="none" stroke="#ffffff" stroke-width="3" />
+              </svg>
+              <figcaption>Красный бархат с малиной</figcaption>
+            </figure>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-choice="ready">
+            <figure>
+              <svg class="slice" viewBox="0 0 216.83 236.87" role="img" aria-label="Медовик с грецким орехом">
+                <image href="../img/photo_6_2026-10-25_12-56-25.jpg" x="0" y="0" width="216.83" height="236.87" preserveAspectRatio="xMidYMid slice" clip-path="url(#slice-frame)" />
+                <use href="#slice-shape" fill="none" stroke="#ffffff" stroke-width="3" />
+              </svg>
+              <figcaption>Медовик с грецким орехом</figcaption>
+            </figure>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-choice="ready">
+            <figure>
+              <svg class="slice" viewBox="0 0 216.83 236.87" role="img" aria-label="Морковь с солёной карамелью">
+                <image href="../img/photo_7_2026-10-25_12-56-25.jpg" x="0" y="0" width="216.83" height="236.87" preserveAspectRatio="xMidYMid slice" clip-path="url(#slice-frame)" />
+                <use href="#slice-shape" fill="none" stroke="#ffffff" stroke-width="3" />
+              </svg>
+              <figcaption>Морковь с солёной карамелью</figcaption>
+            </figure>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-choice="ready">
+            <figure>
+              <svg class="slice" viewBox="0 0 216.83 236.87" role="img" aria-label="Клубника-ваниль">
+                <image href="../img/photo_8_2026-10-25_12-56-25.jpg" x="0" y="0" width="216.83" height="236.87" preserveAspectRatio="xMidYMid slice" clip-path="url(#slice-frame)" />
+                <use href="#slice-shape" fill="none" stroke="#ffffff" stroke-width="3" />
+              </svg>
+              <figcaption>Клубника-ваниль</figcaption>
+            </figure>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-choice="ready">
+            <figure>
+              <svg class="slice" viewBox="0 0 216.83 236.87" role="img" aria-label="Сникерс">
+                <image href="../img/photo_9_2026-10-25_12-56-25.jpg" x="0" y="0" width="216.83" height="236.87" preserveAspectRatio="xMidYMid slice" clip-path="url(#slice-frame)" />
+                <use href="#slice-shape" fill="none" stroke="#ffffff" stroke-width="3" />
+              </svg>
+              <figcaption>Сникерс</figcaption>
+            </figure>
+            </button>
+          </li>
+        </ul>
+          </div>
+          <button type="button" class="menu-all">Все начинки</button>
+          <dialog class="menu-all-view" aria-label="Все начинки">
+            <button type="button" class="menu-all-close" aria-label="Закрыть">×</button>
+            <ul class="menu-all-grid"></ul>
+          </dialog>
+          <h3 class="menu-build-title">Собери тортик</h3>
+            <div class="menu-step">
+              <div class="menu-step-name">
+                <svg class="menu-heart" data-heart="format" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19.6c-.5 0-7.4-4.4-7.4-9.3C4.6 7.4 6.6 5.5 9.1 5.5c1.4 0 2.5.7 3 1.7.5-1 1.6-1.7 3-1.7 2.5 0 4.5 1.9 4.5 4.8 0 4.9-6.9 9.3-7.6 9.3z"/></svg>
+                <p>формат</p>
+              </div>
+              <div class="menu-choices" role="group" aria-label="формат">
+                <button type="button" data-choice="format" data-value="cake">торт</button>
+                <button type="button" data-choice="format" data-value="bento">бенто</button>
+                <button type="button" data-choice="format" data-value="cup">стакан</button>
+              </div>
+            </div>
+            <div class="menu-step" data-lock>
+              <div class="menu-step-name">
+                <svg class="menu-heart" data-heart="biscuit" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19.6c-.5 0-7.4-4.4-7.4-9.3C4.6 7.4 6.6 5.5 9.1 5.5c1.4 0 2.5.7 3 1.7.5-1 1.6-1.7 3-1.7 2.5 0 4.5 1.9 4.5 4.8 0 4.9-6.9 9.3-7.6 9.3z"/></svg>
+                <p>бисквит</p>
+              </div>
+              <div class="menu-choices" role="group" aria-label="бисквит">
+                <button type="button" data-choice="biscuit" data-value="ванильный">ванильный</button>
+                <button type="button" data-choice="biscuit" data-value="шоколадный">шоколадный</button>
+                <button type="button" data-choice="biscuit" data-value="красный бархат">красный бархат</button>
+              </div>
+            </div>
+            <div class="menu-step" data-lock>
+              <div class="menu-step-name">
+                <svg class="menu-heart" data-heart="filling" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19.6c-.5 0-7.4-4.4-7.4-9.3C4.6 7.4 6.6 5.5 9.1 5.5c1.4 0 2.5.7 3 1.7.5-1 1.6-1.7 3-1.7 2.5 0 4.5 1.9 4.5 4.8 0 4.9-6.9 9.3-7.6 9.3z"/></svg>
+                <p>начинка</p>
+              </div>
+              <div class="menu-choices" role="group" aria-label="начинка">
+                <button type="button" data-choice="filling" data-value="малина">малина</button>
+                <button type="button" data-choice="filling" data-value="черника">черника</button>
+                <button type="button" data-choice="filling" data-value="клубника со сливками">клубника со сливками</button>
+                <button type="button" data-choice="filling" data-value="вишня-шоколад">вишня-шоколад</button>
+                <button type="button" data-choice="filling" data-value="карамель-шоколад">карамель-шоколад</button>
+              </div>
+            </div>
+            <div class="menu-step">
+              <div class="menu-step-name">
+                <svg class="menu-heart" data-heart="weight" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19.6c-.5 0-7.4-4.4-7.4-9.3C4.6 7.4 6.6 5.5 9.1 5.5c1.4 0 2.5.7 3 1.7.5-1 1.6-1.7 3-1.7 2.5 0 4.5 1.9 4.5 4.8 0 4.9-6.9 9.3-7.6 9.3z"/></svg>
+                <p>вес</p>
+              </div>
+              <div class="menu-weight" data-weight="cake" hidden>
+                <button type="button" data-kg="-0.5" aria-label="Меньше">−</button>
+                <span data-kg-label>1,5 кг</span>
+                <button type="button" data-kg="0.5" aria-label="Больше">+</button>
+                <p class="menu-min" data-min-note hidden>минимальный вес 1,5 кг</p>
+              </div>
+              <p class="menu-fixed" data-weight="bento" hidden>600 г</p>
+              <div class="menu-weight" data-weight="cup" hidden>
+                <button type="button" data-count="-1" aria-label="Меньше">−</button>
+                <span data-count-label>2 шт.</span>
+                <button type="button" data-count="1" aria-label="Больше">+</button>
+              </div>
+            </div>
+          <div class="menu-checkout" hidden>
+            <p>предварительная стоимость <span data-sum></span></p>
+            <button type="button" class="menu-order-btn">Демо</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="events" class="block">
+        <div class="events-main">
+          <div class="events-copycol">
+            <div class="events-band">
+              <h2 class="events-title">
+                <span class="events-title-text">Мероприятия</span>
+                <canvas width="1394" height="588" aria-hidden="true"></canvas>
+              </h2>
+            </div>
+            <svg class="events-chip" viewBox="0 0 168 36" aria-hidden="true">
+              <path d="M4 8 L20 26 L36 8 L52 26 L68 8 L84 26 L100 8 L116 26 L132 8 L148 26 L164 8" />
+            </svg>
+            <div class="events-lead">
+              <svg class="events-heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19.6c-.5 0-7.4-4.4-7.4-9.3C4.6 7.4 6.6 5.5 9.1 5.5c1.4 0 2.5.7 3 1.7.5-1 1.6-1.7 3-1.7 2.5 0 4.5 1.9 4.5 4.8 0 4.9-6.9 9.3-7.6 9.3z"/></svg>
+              <p>Мастер-классы Сластей проходят в Москве. Садимся за один стол, собираем торт своими руками и проводим вечер в спокойной, дружелюбной обстановке.</p>
+            </div>
+            <div class="events-copy">
+              <p><span class="events-mark">Новогодний мастер-класс, 2025</span>. Готовили морковные торты. Работали вместе, легко и по-доброму, в самом сердце Москвы, <span class="events-mark">на Маяковской</span>.</p>
+              <p><span class="events-mark">Пасхальный мастер-класс, 2026</span>. Готовили красный бархат. Собрались в центре, <span class="events-mark">на проспекте Мира</span>. Вечер вышел тёплым, всем было по-настоящему хорошо.</p>
+            </div>
+          </div>
+          <div class="events-photos">
+            <div class="events-row events-row-top">
+              <figure class="events-shot events-shot-group">
+                <img src="../img/Telegram%20Desktop/photo_1_2026-10-27_23-09-04.jpg" width="1206" height="776" alt="Участники мастер-класса вместе на кухне" />
+              </figure>
+              <figure class="events-shot events-shot-lesson">
+                <img src="../img/Telegram%20Desktop/IMG_1871%20(2).JPG" width="4608" height="3456" alt="Кондитер показывает, как работать с кондитерским мешком" />
+              </figure>
+            </div>
+            <div class="events-row events-row-bottom">
+              <figure class="events-shot events-shot-oven">
+                <img src="../img/Telegram%20Desktop/IMG_1858%20(2).JPG" width="4608" height="3456" alt="Участник мастер-класса у духовки" />
+              </figure>
+              <figure class="events-shot events-shot-portrait">
+                <img src="../img/Telegram%20Desktop/IMG_1879%20(2).JPG" width="3456" height="4608" alt="Участница помешивает смесь на плите" />
+              </figure>
+            </div>
+          </div>
+          <figure class="events-solo">
+            <img src="../img/Telegram%20Desktop/IMG_1867.JPG" alt="Гостья собирает красный бархат на мастер-классе" />
+          </figure>
+        </div>
+      </section>
+
+      <section id="reviews" class="block reviews">
+        <div class="wrap">
+          <h2>Отзывы</h2>
+          <div class="review-stack" id="review-stack">
+          <ul class="review-list">
+            <li>
+              <figure class="review-card">
+                <blockquote>
+                  <p>Бенто поставили прямо передо мной. Маленький, с надписью, крем нежный. Мы съели его ещё до чая.</p>
+                </blockquote>
+                <figcaption>
+                  <span class="review-author">Аня</span>
+                  <span class="review-title">Бенто</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="review-card">
+                <blockquote>
+                  <p>На семейный стол брали красный бархат. Малина чуть кислит, бисквит влажный, и каждому хватило по большому куску.</p>
+                </blockquote>
+                <figcaption>
+                  <span class="review-author">Марина</span>
+                  <span class="review-title">Красный бархат</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="review-card">
+                <blockquote>
+                  <p>На встречу с подругами взяли тортики в стаканчиках. У каждой свой, сверху милый рисунок, и домой унести было легко.</p>
+                </blockquote>
+                <figcaption>
+                  <span class="review-author">Лера</span>
+                  <span class="review-title">Тортики в стаканчиках</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="review-card">
+                <blockquote>
+                  <p>Маме заказала морковный торт с солёной карамелью. Карамель чуть солоноватая, орех хрустит. Она вспоминала его весь вечер.</p>
+                </blockquote>
+                <figcaption>
+                  <span class="review-author">Оля</span>
+                  <span class="review-title">Морковный торт</span>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+          <div class="review-nav">
+            <button type="button" class="review-arrow" data-review="-1" aria-label="Предыдущий отзыв">‹</button>
+            <button type="button" class="review-arrow" data-review="1" aria-label="Следующий отзыв">›</button>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-foot">
+      <div class="wrap site-foot-top">
+        <div>
+          <p class="site-foot-name">Сласти</p>
+          <p class="site-foot-line">Кондитерская в Москве</p>
+        </div>
+        <nav aria-label="Внизу страницы">
+          <a href="#about">О сластях</a>
+          <a href="#menu">Меню</a>
+          <a href="#events">Мероприятия</a>
+          <a href="#reviews">Отзывы</a>
+        </nav>
+      </div>
+      <div class="wrap">
+        <p class="site-foot-note">Сайт концептуальный. Все отзывы вымышлены.</p>
+        <p class="site-foot-meta">Москва · с 2022</p>
+      </div>
+    </footer>
+
+    <script src="../java/main.js?v=28"></script>
+  </body>
+</html>
